@@ -1,0 +1,57 @@
+/*body{
+    min-height: 500px;
+    border: 5px solid black;
+    display: flex;/*default row*/
+/*
+  gap:20px; 
+   flex-wrap:wrap;
+   justify-content:center;/*main axis alignment*/
+   /*align-items:center;/*cross axis alignment*/
+  /*align-content:center;
+
+}**/
+
+body{
+   display: flex;/*default row*/
+  gap:10px; 
+
+/*
+
+.box{
+height: 100px ;
+width: 100px;
+background-color:blueviolet;
+font-size: 10pt;
+/*To Set The Typed Value*/
+/*
+display:flex;
+justify-content: center;
+align-items:center
+}*/
+
+/*changing the size of box after shrinking*/
+.box{
+  flex-shrink:1; //default value1 to shrink item
+  /*flex-grow:0;//default value0 to grow (spread) item*/
+  min-width:100px;/*cannot shirk more than 300px*/
+  /*min-width:300px;/*cannot shirk more less 300px--min so overflow--so we use flex wrap--@media()*/
+height: 100px ;
+width: 100px;
+background-color:blueviolet;
+font-size: 10pt;
+/*To Set The Typed Value*/
+display:flex;
+justify-content: center;
+align-items:center
+}
+@media  (max-width: 575px){
+  body{
+    flex-wrap:wrap;/*responsive line break*/
+  }
+  
+}
+
+/*to shirk one item
+#box-1{
+flex-shrink: 0;
+}*/
